@@ -1,0 +1,374 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  :focus,
+  :active {
+    outline: none;
+  }
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+  }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0;
+  }
+  ul li {
+    list-style: none;
+    margin: 0;
+  }
+  img {
+    vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  /*--------------------*/
+  
+  body {
+    font-family: Russo One;
+  }
+  
+  .header {
+    padding: 0 25px;
+  }
+  .container {
+  }
+  .container-1440 {
+    background: url('./images/background.webp') center top/100% no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+  .header__logo {
+    width: 90px;
+    height: 22px;
+  }
+  .header__logo a,
+  img {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    display: block;
+  }
+  .header__logo img:hover {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    opacity: 0.7;
+  }
+  .header__menu {
+  }
+  .header__menu ul {
+    display: flex;
+    gap: 30px;
+    font-family: Russo One;
+    font-size: 24px;
+  }
+  .header__menu a {
+    color: rgba(0, 0, 0, 0.7);
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .header__menu a:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .header__contact {
+  }
+  
+  .header__messages {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+  }
+  .header__messages a {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+  }
+  .header__messages a:hover {
+    opacity: 0.7;
+  }
+  .header__phone {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One;
+    font-size: 24px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .header__phone:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .header__mail {
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One;
+    font-size: 14px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  .header__mail:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  main {
+    height: 1200px;
+  }
+  
+  .banner {
+    display: flex;
+    position: relative;
+    padding: 50px 122px 0 122px;
+  }
+  .banner__content {
+    padding-right: 50px;
+  }
+  .banner__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+  }
+  .banner__description {
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .banner__price {
+    margin-top: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+  }
+  .banner__buttons {
+    display: flex;
+    gap: 37px;
+    margin-top: 25px;
+  }
+  
+  .banner__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #e09feb;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One;
+    font-size: 16px;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+  .banner__cta-button:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: #f2abff;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  .banner__contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #9fd6eb;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One;
+    font-size: 16px;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+  .banner__contact-button:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: #abe7ff;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  .banner__product-image {
+    width: 596px;
+    height: 596px;
+    flex-shrink: 0;
+  }
+  .banner__product-image img {
+    position: absolute;
+    top: -50px;
+    right: 104px;
+    z-index: -1;
+    object-fit: contain;
+    width: 596px;
+    height: 596px;
+    /* flex-shrink: 0; */
+  }
+  
+  /* Order */
+  .order {
+    display: flex;
+    gap: 100px;
+  }
+  .order__product-image {
+    position: relative;
+    width: 635px;
+    height: 534px;
+    flex-shrink: 0;
+  }
+  .order__product-image img {
+    position: absolute;
+    width: 593px;
+    height: 534px;
+    top: -70px;
+    left: 36px;
+  }
+  .order__content {
+    max-width: 590px;
+  }
+  .order__title {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One;
+    font-size: 32px;
+  }
+  .order__description {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .order__contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .order__contact-form input {
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+    flex: 1;
+  }
+  input::placeholder {
+    opacity: 0.5;
+  }
+  input:hover {
+    outline: 2px solid #c5eb9f;
+  }
+  textarea::placeholder {
+    opacity: 0.5;
+  }
+  textarea:hover {
+    outline: 2px solid #c5eb9f;
+  }
+  .order__block-name-phone {
+    display: flex;
+    gap: 24px;
+    margin-top: 25px;
+  }
+ 
+  .message {
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+  }
+
+  .order__send-button {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #c5eb9f;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Russo One;
+    font-size: 16px;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+  
+  .order__send-button:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background: #d6ffac;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
